@@ -48,3 +48,4 @@ if exists('+termguicolors')
 endif
 
 let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
+set pyxversion=3
