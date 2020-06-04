@@ -23,8 +23,6 @@ augroup END
 
 set autowrite
 
-let g:python3_host_prog = '/Users/zhangwenli/.pyenv/shims/python3.7'
-
 " Reloads vimrc after saving but keep cursor position
 if !exists('*ReloadVimrc')
    fun! ReloadVimrc()
@@ -43,5 +41,10 @@ set backspace=indent,eol,start
 " start   allow backspacing over the start of insert; CTRL-W and CTRL-U
 "        stop once at the start of insert.
 
-set termguicolors
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 
+let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
