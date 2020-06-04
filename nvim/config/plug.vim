@@ -264,6 +264,18 @@ let g:go_def_mapping_enabled = 0
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+let g:coc_global_extensions=[
+            \'coc-json',
+            \'coc-css',
+            \'coc-tsserver',
+            \'coc-java',
+            \'coc-highlight',
+            \'coc-ultisnips',
+            \'coc-lists',
+            \'coc-emmet',
+            \'coc-yaml'
+            \]
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
