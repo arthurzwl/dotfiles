@@ -188,6 +188,7 @@ Plug 'majutsushi/tagbar'
 Plug 'preservim/nerdtree'
 
 map <C-n> :NERDTreeToggle<CR>
+map <leader>nr :NERDTreeFind<cr>
 " let g:NERDTree_title="[NERDTree]"
 let NERDTreeHighlightCursorline=1
 let NERDChristmasTree=1
