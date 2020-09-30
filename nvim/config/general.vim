@@ -20,6 +20,7 @@ augroup auto_ts
   autocmd FileType json setlocal et sta sw=2 sts=2 ts=2
   autocmd FileType sshconfig setlocal et sta sw=2 sts=2 ts=2
   autocmd FileType go setlocal et sta sw=4 sts=4 ts=4
+  autocmd FileType proto setlocal et sta sw=2 sts=2 ts=2
 augroup END
 
 set autowrite
