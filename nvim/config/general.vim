@@ -49,5 +49,6 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+let g:python_host_prog = '~/.pyenv/versions/py2nvim/bin/python'
 let g:python3_host_prog = '~/.pyenv/versions/py3nvim/bin/python'
 set pyxversion=3
