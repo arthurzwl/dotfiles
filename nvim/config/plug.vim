@@ -193,18 +193,19 @@ map <leader>nf :NERDTreeFind<cr>
 let NERDTreeHighlightCursorline=1
 let NERDChristmasTree=1
 
-Plug 'Xuyuanp/nerdtree-git-plugin'
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-      \ "Modified"  : "✹",
-      \ "Staged"    : "✚",
-      \ "Untracked" : "✭",
-      \ "Renamed"   : "➜",
-      \ "Unmerged"  : "═",
-      \ "Deleted"   : "✖",
-      \ "Dirty"     : "✗",
-      \ "Clean"     : "✔︎",
-      \ "Unknown"   : "?"
-      \ }
+" not maintained
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+"let g:NERDTreeIndicatorMapCustom = {
+"      \ "Modified"  : "✹",
+"      \ "Staged"    : "✚",
+"      \ "Untracked" : "✭",
+"      \ "Renamed"   : "➜",
+"      \ "Unmerged"  : "═",
+"      \ "Deleted"   : "✖",
+"      \ "Dirty"     : "✗",
+"      \ "Clean"     : "✔︎",
+"      \ "Unknown"   : "?"
+"      \ }
 
 Plug 'arthurzwl/nerdtree-tagbar-combined'
 nmap <F7> :ToggleNERDTreeAndTagbar<CR>
