@@ -42,6 +42,8 @@ call plug#begin()
 
 " Make sure you use single quotes
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
 
@@ -62,7 +64,7 @@ call plug#begin()
 " Plug 'fatih/vim-go', { 'tag': '*' }
 
 " Plugin options
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+" Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
