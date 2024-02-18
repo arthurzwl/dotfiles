@@ -1,3 +1,5 @@
+" to use neovim
+" https://neovim.io/doc/user/nvim.html#nvim-from-vim
 scriptencoding utf-8
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
@@ -78,3 +80,12 @@ call plug#end()
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
+
+" neovim
+if exists(':tnoremap')
+    tnoremap <Esc> <C-\><C-n>
+endif
+
+" vim-go
+let g:go_term_mode = "vsplit"
+
