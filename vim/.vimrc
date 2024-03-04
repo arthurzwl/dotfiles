@@ -24,6 +24,7 @@ augroup auto_ts
 augroup END
 
 set nu
+set hlsearch
 
 let mapleader=","
 let g:mapleader=","
@@ -32,6 +33,8 @@ noremap <leader>y "+y
 noremap <leader>yy "+Y
 " Preserve indentation while pasting text from the OS X clipboard 在粘贴OS X剪贴板中的文本时保留缩进
 noremap <leader>p :set paste<CR>:put +<CR>:set nopaste<CR>
+" 取消高亮
+nnoremap <nowait><silent> <C-C> :noh<CR>
 
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -45,6 +48,9 @@ call plug#begin()
 " Make sure you use single quotes
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" Vim 中文文档
+Plug 'yianwillis/vimcdoc'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
