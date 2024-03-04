@@ -1,1 +1,1 @@
-nmap g] :action GotoImplementation<CR>
+nmap gi <Action>(GotoImplementation)
