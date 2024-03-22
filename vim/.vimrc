@@ -24,7 +24,12 @@ augroup auto_ts
 augroup END
 
 set nu
+
+" 搜索高亮
 set hlsearch
+set incsearch
+" 搜索忽略大小写
+set ignorecase
 
 let mapleader=","
 let g:mapleader=","
