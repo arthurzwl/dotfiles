@@ -1,2 +1,5 @@
+let mapleader=","
 nmap gi <Action>(GotoImplementation)
+
 set keep-english-in-normal-and-restore-in-insert
+set easymotion

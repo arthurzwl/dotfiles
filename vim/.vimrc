@@ -57,6 +57,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Vim 中文文档
 Plug 'yianwillis/vimcdoc'
 
+Plug 'easymotion/vim-easymotion'
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
 
