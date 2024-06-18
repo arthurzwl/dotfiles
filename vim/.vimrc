@@ -125,6 +125,14 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
+Plug 'brglng/vim-im-select'
+
+let g:im_select_get_im_cmd = ['im-select']
+let g:im_select_default = 'com.apple.keylayout.ABC'
+let g:im_select_enable_cmd_line = 1
+let g:im_select_enable_for_gvim = 1
+
+
 call plug#end()
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
