@@ -132,6 +132,7 @@ let g:im_select_default = 'com.apple.keylayout.ABC'
 let g:im_select_enable_cmd_line = 1
 let g:im_select_enable_for_gvim = 1
 
+Plug 'preservim/nerdtree'
 
 call plug#end()
 " You can revert the settings after the call like so:
@@ -146,3 +147,5 @@ endif
 " vim-go
 let g:go_term_mode = "vsplit"
 
+" PHP tags
+au BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
