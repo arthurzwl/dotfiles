@@ -1,4 +1,3 @@
-let mapleader=","
 nmap gi <Action>(GotoImplementation)
 
 set keep-english-in-normal-and-restore-in-insert
@@ -13,4 +12,11 @@ map f <Action>(AceAction)
 " Press `F` to activate Target Mode
 map F <Action>(AceTargetAction)
 " Press `g` to activate Line Mode
-map <l><l>g <Action>(AceLineAction)
+map g <Action>(AceLineAction)
+
+let mapleader=","
+let g:mapleader=","
+" Yank text to the OS X clipboard" 将文本复制到OS X剪贴板中
+noremap <leader>y "+y
+noremap <leader>yy "+Y
+
